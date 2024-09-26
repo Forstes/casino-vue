@@ -1,0 +1,5 @@
+<template>
+  <div class="fixed inset-0 flex items-center justify-center bg-stone-900 z-50">
+    <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-pink-500 border-solid"></div>
+  </div>
+</template>
