@@ -36,7 +36,7 @@
         </div>
         <div class="mt-3 flex items-center w-full">
           <input type="checkbox" class="mr-2" />
-          <label class="text-white">I Accept The Privacy Policy</label>
+          <label class="text-white">I Accept The <span class="underline underline-offset-2">Privacy Policy</span></label>
         </div>
       </div>
       <button class="gradient-btn w-[160px] h-[44px] rounded-lg hover:brightness-110 text-lg font-bold">Join Now</button>

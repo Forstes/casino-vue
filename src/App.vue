@@ -33,7 +33,7 @@ import { Bars3Icon } from "@heroicons/vue/24/solid";
     </div>
   </nav>
 
-  <div class="sm:px-12 lg:px-18 xl:px-44">
+  <div class="px-4 sm:px-12 lg:px-18 xl:px-44">
     <header class="text-center pt-16 px-4">
       <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
         AWESOME HTML5 GAMES <br />
@@ -54,7 +54,7 @@ import { Bars3Icon } from "@heroicons/vue/24/solid";
     </header>
 
     <!-- Games -->
-    <section class="py-16 text-center px-4">
+    <section class="py-12 sm:py-16 text-center">
       <div class="flex justify-between items-end space-x-2">
         <div>
           <h2 class="text-left text-2xl md:text-4xl font-bold">Our Games</h2>
@@ -64,7 +64,7 @@ import { Bars3Icon } from "@heroicons/vue/24/solid";
         <a href="#" class="underline underline-offset-2 font-semibold text-base">All games</a>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center	 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-4">
         <Games1 />
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
@@ -91,44 +91,82 @@ import { Bars3Icon } from "@heroicons/vue/24/solid";
 
           <div class="sm:col-span-2 group hover:scale-105 text-left">
             <img src="/assets/banner_promo.jpeg" class="h-30 object-cover rounded-xl" />
-            <h3 class="font-bold mt-2 group-hover:text-[#4870FF]">Our deals are not to be missed</h3>
-            <h4 class="text-xs opacity-50">Discover a wide range of weekly promotions</h4>
+            <div class="flex justify-between">
+              <div>
+                <h3 class="font-bold mt-2 group-hover:text-[#4870FF] text-xs sm:text-base">Our deals are not to be missed</h3>
+                <h4 class="text-xs opacity-50">Discover a wide range of weekly promotions</h4>
+              </div>
+              <button class="rounded-xl bg-[#4870FF] hover:brightness-75 px-2 sm:px-8 text-[10px] leading-3 mt-3 font-semibold">Read more</button>
+            </div>
           </div>
         </div>
       </div>
+
+      <h2 class="text-sm text-left max-w-[655px] mt-6">* We don't offer opportunities to play for real money. Our games are free demo. All games were invented for entertainment purposes only and do not offer real money prizes.</h2>
     </section>
 
     <!-- Contact Us -->
-    <section class="py-16 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact Us</h2>
-        <p class="mb-12">If you have some questions, send us a message</p>
-        <form class="space-y-6">
-          <input type="text" placeholder="Firstname" class="w-full p-4 rounded border border-gray-700" />
-          <input type="email" placeholder="Email Address" class="w-full p-4 rounded border border-gray-700" />
-          <textarea placeholder="Your message here..." class="w-full p-4 rounded border border-gray-700 h-32"></textarea>
-          <button class="px-6 py-3 bg-pink-500 rounded hover:bg-pink-700">Send</button>
-        </form>
+    <section class="pt-4 flex justify-center lg:justify-between gap-8">
+      <div>
+        <div class="max-w-lg mx-auto text-center lg:text-left pb-20">
+          <h2 class="text-3xl md:text-4xl font-bold mb-1.5">Contact Us</h2>
+          <p class="mb-6">If you have some questions, send us a message</p>
+          <form class="space-y-6">
+            <input type="text" placeholder="Firstname" class="w-full p-4 h-11 rounded-lg border border-gray-700" />
+            <input type="email" placeholder="Email Address" class="w-full p-4 h-11 rounded-lg border border-gray-700" />
+            <textarea placeholder="Your message here..." class="w-full p-4 rounded-lg border border-gray-700 h-32"></textarea>
+            <div class="flex justify-between flex-wrap gap-8">
+              <div class="flex items-center">
+                <input type="checkbox" class="mr-2" />
+                <label class="text-white">I Accept The <span class="underline underline-offset-2">Privacy Policy</span></label>
+              </div>
+              <button class="mx-auto sm:mx-0 px-6 bg-pink-500 rounded-xl w-32 h-11 font-bold gradient-btn hover:brightness-110">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
+
+      <img src="/assets/image.png" class="hidden lg:block" />
     </section>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 py-8 text-center">
-    <p class="text-sm">&copy; 2022 Your Website Name. All Rights Reserved.</p>
-    <div class="mt-4 space-x-6">
-      <a href="#" class="hover:text-pink-500">Disclaimer</a>
-      <a href="#" class="hover:text-pink-500">Privacy Policy</a>
-      <a href="#" class="hover:text-pink-500">Terms of Conditions</a>
+  <footer class="py-6 text-center bg-[#01011F] px-4 sm:px-12 md:px-32">
+    <div class="flex justify-center gap-4">
+      <a href="#" class="hover:text-pink-500 text-sm sm:text-lg font-bold">Disclaimer</a>
+      <span class="hidden sm:block text-lg font-bold">|</span>
+      <a href="#" class="hover:text-pink-500 text-sm sm:text-lg font-bold">Privacy Policy</a>
+      <span class="hidden sm:block text-lg font-bold">|</span>
+      <a href="#" class="hover:text-pink-500 text-sm sm:text-lg font-bold">Terms of Conditions</a>
+    </div>
+
+    <p class="mt-4 text-sm max-w-5xl mx-auto">This site does not provide any form of online gambling and delivers information for entertainment and research purposes only. The games listed by Topwinningslots are intended for adult audience entertainment (underage visitors are restricted) and do not offer real money or prizes. Practicing online free games does not imply future success at 'real money' gambling.</p>
+
+    <hr class="max-w-5xl mx-auto my-6" />
+
+    <div class="max-w-5xl mx-auto flex flex-wrap justify-center sm:justify-between gap-4">
+      <p class="text-sm">&copy; 2022 Your Website Name. All Rights Reserved.</p>
+
+      <div class="flex gap-4">
+        <a href="#" target="_blank">
+          <i class="fab fa-twitter w-4"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook w-4"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram w-4"></i>
+        </a>
+      </div>
     </div>
   </footer>
 </template>
 
 <style>
 body {
-  background-image: url("/assets/bg_hero.png"), url("/assets/bg_contact.jpeg");
-  background-position: center top, center bottom;
-  background-size: contain, contain;
+  background-image: url("/assets/bg_hero.png"), url("/assets/bg_contact.jpg");
+  background-position: center -400px, center center;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   color: white;
 }
